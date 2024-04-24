@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./live1.css">
+</head>
+<body>
+    <div class="prev">
+        <a href="./sim.html">
+            <button class="buttonn">Exit</button>
+        </a>
+    </div>
+    <div class="contain">
+        
+        <div class="live">
+             <h2>XEM PHONG THỦY SIM SỐ THEO VẬN MỆNH</h2>
+             <h3>(TRƯỜNG PHÁI : VẬN NIÊN - 64 QUẺ DỊCH & 80 QUẺ LÝ SỐ)</h3>
+             
+             <div class="inputTwo">
+                    <div >
+                        <label for="sdt">NHẬP SỐ CẦN XEM </label>
+                        <br>
+                        <input type="text" name="" class="chuoi1" id="sdt">
+                    </div>
+                    <div>
+                        <label for="born">NĂM SINH ÂM LỊCH</label>
+                        <br>
+                        <input type="text" name="" id="born">
+                    </div>
+             </div>
+             <button class="button" onclick="showInputValue1()">XEM PHONG THỦY SIM</button>
+             <div class="showOne">
+                     <div class="tuoi"></div>
+                     <div class="van"></div>
+                     <div class="dich"></div>
+             </div>
+             <div class="showTwo" style="text-align: center;">
+                  <div class="ynds" style="text-align: center;"></div>
+                  <div class="ynss" style="text-align: center;"></div>
+             </div>
+             <div class="showThree">
+                   <div>SƠ NIÊN VẬN</div>
+                   <div>TIỀN VẬN</div>
+                   <div>TRUNG VẬN</div>
+                   <div>HẬU VẬN</div>
+             </div>
+             <div class="showfor">
+                   <div class="snv tpp"></div>
+                   <div class="tv"></div>
+                   <div class="trv"></div>
+                   <div class="hv"></div>
+             </div>
+             
+        </div>
+        
+    </div>
+    <div id="bangcuoi">
+    <table id="customerse-bangc">
+       <thead>
+           <tr>
+               <th>Vận</th>
+               <th>Tên Quẻ</th>
+               <th>Tên Quẻ Dịch</th>
+               <th>STT Quẻ</th>
+               <th>Bất Biến Du Niên</th>
+               <th>Trạng Thái Quẻ</th>
+               <th>KeyWord Liên Quan</th>
+               <th>Giải Nghĩa</th>
+           </tr>
+      </thead>
+      <tbody>
+    
+      </tbody>
+    </table>
+    <div  id="trungvan">
+       
+       <table id="customerse-bctv">
+          <thead style="display: none;">
+              <tr>
+                  <th>Vận</th>
+                  <th>Tên Quẻ Dịch</th>
+                  <th>STT Quẻ</th>
+                  <th>Trạng Thái Quẻ</th>
+                  <th>KeyWord Liên Quan</th>
+                  <th>Giải Nghĩa</th>
+              </tr>
+         </thead>
+         <tbody></tbody>
+       </table>
+    </div>  
+    <div style="display: none;" id="trungvan">
+       
+       <table id="customerse-bctrv">
+          <thead>
+              <tr>
+                  <th>Vận</th>
+                  <th>Tên Quẻ Dịch</th>
+                  <th>STT Quẻ</th>
+                  <th>Trạng Thái Quẻ</th>
+                  <th>KeyWord Liên Quan</th>
+                  <th>Giải Nghĩa</th>
+              </tr>
+         </thead>
+         <tbody></tbody>
+       </table>
+    </div>  
+    <div style="display: none;" id="trungvan">
+       
+       <table id="customerse-bchv">
+          <thead>
+              <tr>
+                  <th>Vận</th>
+                  <th>Tên Quẻ Dịch</th>
+                  <th>STT Quẻ</th>
+                  <th>Trạng Thái Quẻ</th>
+                  <th>KeyWord Liên Quan</th>
+                  <th>Giải Nghĩa</th>
+              </tr>
+         </thead>
+         <tbody></tbody>
+       </table>
+    </div>  
+    
+    </div>
+    <script src="./live.js">
+    </script>
+</body>
+
+</html>

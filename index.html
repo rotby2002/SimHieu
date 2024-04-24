@@ -1,0 +1,86 @@
+<!--Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<link rel="icon" href="https://www.techone.vn/wp-content/uploads/2022/09/14-prm-vang-1.jpg" type="image/x-icon">
+
+<title>Login</title>
+<!-- Meta tag Keywords -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Online Login Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Meta tag Keywords -->
+<!-- css files -->
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" /> <!-- Style-CSS --> 
+<link rel="stylesheet" href="css/font-awesome.css"> <!-- Font-Awesome-Icons-CSS -->
+<!-- //css files -->
+<!-- online-fonts -->
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&amp;subset=latin-ext" rel="stylesheet">
+<!-- //online-fonts -->
+</head>
+<body>
+<!-- main -->
+<div class="center-container">
+    <!--header-->
+    <div class="header-w3l">
+        <h1 id="fontt">Minh New Sim Vận Niên</h1>
+    </div>
+    <!--//header-->
+    <div class="main-content-agile">
+        <div class="sub-main-w3">    
+            <div class="wthree-pro">
+                <h2>Đăng nhập</h2>
+            </div>
+            <form id="loginForm" action="#" method="post">
+                <div class="pom-agile">
+                    <input placeholder="E-mail" id="email" name="Name" class="user" type="email" required="">
+                    <span class="icon1"><i class="fa fa-user" aria-hidden="true"></i></span>
+                </div>
+                <div class="pom-agile">
+                    <input  placeholder="Password" id="password" name="Password" class="pass" type="password" required="">
+                    <span class="icon2"><i class="fa fa-unlock" aria-hidden="true"></i></span>
+                </div>
+                <div class="sub-w3l">
+                    <h6><a href="https://www.facebook.com/profile.php?id=100078878304792">Quên mật khẩu</a></h6>
+                    <div class="right-w3l">
+                        <input type="submit" value="Đăng nhập">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--//main-->
+    <!--footer-->
+    
+    <!--//footer-->
+</div>
+<script>
+     document.getElementById("loginForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+
+        // Thực hiện kiểm tra email và mật khẩu ở đây
+        if (email === "Phongthuythuchanhtrongdoisong@gmail.com" && password === "New@6868") {
+            // Nếu thông tin đúng, chuyển hướng đến trang khác
+            window.location.href = "sim.html";
+        } else {
+            // Nếu thông tin không đúng, hiển thị thông báo lỗi và chuyển hướng lại trang đăng nhập
+            alert("Email hoặc mật khẩu không đúng. Vui lòng thử lại.");
+            // Lưu thông báo lỗi vào sessionStorage
+            sessionStorage.setItem("loginErrorMessage", "Email hoặc mật khẩu không đúng. Vui lòng thử lại.");
+            // Chuyển hướng lại trang đăng nhập
+            window.location.href = "index.html";
+        }
+    });
+</script>
+
+</body>
+</html>

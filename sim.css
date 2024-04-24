@@ -1,0 +1,438 @@
+
+.content{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, #e3743a, #ffd74b);
+    overflow: auto; 
+}
+.title{
+    text-align: center;
+}
+.input{
+    height: 300px;
+    border: 0 px solid #ccc; /* Đường viền để xác định kích thước */
+    overflow: auto; 
+    display: flex;
+    justify-content: center;
+}
+.menh{
+    margin-top:20px ;
+    display: flex;
+    justify-content: center;
+}
+.menh button{
+    outline: none;
+    border: none;
+    padding: 5px 40px;
+    margin: 0 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.tim{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.tim button{
+  color: white;
+    background-color: #4cd137;
+    outline: none;
+    border: none;
+    padding: 10px 40px;
+    margin: 0 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#customers {
+  color: rgb(0, 0, 128);
+    text-align: center;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    height: 100%;
+    scrollbar-width: thin;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+  #customers button{
+     padding: 5px 30px;
+     outline: none;
+     border: none;
+     border-radius: 20px;
+     color: rgb(0, 0, 128);
+     cursor: pointer;
+     transition-duration: 1s;
+  }
+  #result{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  
+
+  #customer {
+      color: rgb(0, 0, 128);
+      text-align: center;
+      font-size: 18px;
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 80%;
+      height: 100%;
+      scrollbar-width: thin;
+    }
+    
+    #customer td, #customer th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    #customer tr:nth-child(even){background-color: #f2f2f2;}
+    
+    #customer tr:hover {background-color: #ddd;}
+    
+    #customer th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #04AA6D;
+      color: white;
+    }
+    #customer th{
+      text-align: center;
+    }
+    .title {
+      color: #5f27cd; /* Màu ban đầu */
+    }
+    #vanmenh{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 50px 0px;
+    }
+    #customerse-tienvan{
+      color: rgb(0, 0, 128);
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      height: 100%;
+      scrollbar-width: thin;
+    }
+    #customerse-tienvan td, #customerse-tienvan th , #customerse-bc td, #customerse-bc th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    #customerse-tienvan tr:nth-child(even){background-color: #f2f2f2;}
+    
+    #customerse-tienvan tr:hover {background-color: #ddd;}
+    
+    #customerse-tienvan th , #customerse-bc th{
+      padding: 12px 24px;
+      text-align: left;
+      background-color: #04AA6D;
+      color: white;
+    }
+    #customerse-tienvan th , #customerse-bc th{
+      text-align: center;
+    }
+
+    #customerse-trungvan{
+      color: rgb(0, 0, 128);
+      text-align: center;
+      font-size: 18px;
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      height: 100%;
+      scrollbar-width: thin;
+      margin: 50px 0px;
+    }
+    #customerse-trungvan td, #customerse-trungvan th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    #customerse-trungvan tr:nth-child(even){background-color: #f2f2f2;}
+    
+    #customerse-trungvan tr:hover {background-color: #ddd;}
+    
+    #customerse-trungvan th {
+      padding: 12px 24px;
+      text-align: left;
+      background-color: #04AA6D;
+      color: white;
+    }
+    #customerse-trungvan th{
+      text-align: center;
+    }
+
+    #customerse-hauvan{
+      color: rgb(0, 0, 128);
+      text-align: center;
+      font-size: 18px;
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      height: 100%;
+      scrollbar-width: thin;
+    }
+    #customerse-hauvan td, #customerse-hauvan th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    #customerse-trungvan td , #customerse-tienvan td ,#customerse-hauvan td
+    {
+        font-size: 13.5px;
+        color: black;
+    }
+    #customerse-hauvan tr:nth-child(even){background-color: #f2f2f2;}
+    
+    #customerse-hauvan tr:hover {background-color: #ddd;}
+    
+    #customerse-hauvan th {
+      padding: 12px 24px;
+      text-align: left;
+      background-color: #04AA6D;
+      color: white;
+    }
+    #customerse-hauvan th{
+      text-align: center;
+    }
+    #tienvan,#trungvan,#hauvan{
+        width: 80%;
+    }
+    .tv {
+      width: 100px; /* Điều chỉnh kích thước theo mong muốn */
+      height: 100px; /* Điều chỉnh kích thước theo mong muốn */
+      background-color: beige;
+      border-radius: 50%; /* Tạo hình tròn bằng cách sử dụng border-radius */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Đổ bóng */
+      margin: 10px 0px;
+    }
+    
+    .tv p {
+      margin: 0;
+
+    }
+    .trv {
+      width: 100px; /* Điều chỉnh kích thước theo mong muốn */
+      height: 100px; /* Điều chỉnh kích thước theo mong muốn */
+      background-color: beige;
+      border-radius: 50%; /* Tạo hình tròn bằng cách sử dụng border-radius */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Đổ bóng */
+      margin: 10px 0px;
+    }
+    
+    .trv p {
+      margin: 0;
+
+    }
+    .hv {
+      width: 100px; /* Điều chỉnh kích thước theo mong muốn */
+      height: 100px; /* Điều chỉnh kích thước theo mong muốn */
+      background-color: beige;
+      border-radius: 50%; /* Tạo hình tròn bằng cách sử dụng border-radius */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Đổ bóng */
+      margin: 10px 0px;
+    }
+    
+    .hv p {
+      margin: 0;
+
+    }
+
+    .logout-button {
+      background-color: #ff0000; /* Màu nền của nút */
+      color: #ffffff; /* Màu văn bản trên nút */
+      padding: 10px 20px; /* Kích thước của nút */
+      border: none; /* Loại bỏ viền */
+      border-radius: 5px; /* Bo góc cho nút */
+      cursor: pointer; /* Biểu tượng con trỏ khi di chuột qua nút */
+      font-weight: bold; /* Độ đậm của văn bản */
+  }
+  
+  .logout-button:hover {
+      background-color: #cc0000; /* Màu nền khi di chuột qua nút */
+  }
+  .lo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+ .pc{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+ }
+ .chuoi{
+     outline: none;
+     padding : 20px 30px;
+     width: 300px;
+     border: none;
+     border-radius: 14px;
+     font-size: 30px;
+     font-weight: 800;
+     color: #989ea4;
+     background-color: none;
+     text-align: center;
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
+ }
+ .button1 {  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);}
+ .button1:hover {  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);}
+ .seenMenh{
+    margin: 50px;
+    
+    
+ }
+ .button1{
+    cursor: pointer;
+    width: 160px;
+    padding: 10px 30px ;
+    border: none;
+    border-radius: 10px;
+ }
+/* css input */
+
+#customerse-bangc{
+  color: rgb(0, 0, 128);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  height: 100%;
+  scrollbar-width: thin;
+}
+#customerse-bangc td, #customerse-bangc th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customerse-bangc tr:nth-child(even){background-color: #f2f2f2;}
+
+#customerse-bangc tr:hover {background-color: #ddd;}
+
+#customerse-bangc th {
+  padding: 12px 24px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+#customerse-bangc th{
+  text-align: center;
+}
+#bangcuoi{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+}
+#customerse-dayso th{
+  padding: 12px 24px;
+  width: 250px;
+  background-color: #04AA6D;
+  color: white;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+#customerse-dayso tr,td{
+  color:  rgb(0, 0, 128);
+  text-align: center;
+}
+
+#customerse-bc{
+  color: rgb(0, 0, 128);
+  text-align: center;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  height: 100%;
+  scrollbar-width: thin;
+  margin: 50px 0px;
+}
+.nguhanh{
+  display: flex;
+  justify-content: center;
+}
+
+#nguhanhtb {
+  border-collapse: collapse;
+  width: 80%;
+}
+thead{
+  background-color: #04AA6D;
+  color: white;
+  padding: 8px 12px;
+}
+th, td {
+  padding: 13px 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  border: 1px solid #ddd;
+}
+
+tr:hover {background-color: coral;}
+.dulieu{
+  display: flex;
+  justify-content: center;
+  margin: 14px;
+}
+#namsinh{
+  outline: none;
+  padding : 20px 30px;
+  width: 300px;
+  border: none;
+  border-radius: 14px;
+  font-size: 30px;
+  font-weight: 800;
+  color: #989ea4;
+  background-color: none;
+  text-align: center;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.button {  display: inline-block;  padding: 15px 25px;  font-size: 24px;  cursor: pointer;  text-align: center;  text-decoration: none;  outline: none;  color: #fff;  background-color: #4cd137;  border: none;  border-radius: 15px;  box-shadow: 0 9px wheat;}.button:hover {background-color: #58257b}.button:active {  background-color: #58257b;  box-shadow: 0 5px #666;  transform: translateY(4px);}
+
+.liveTikTok{
+   position: relative;
+   top: 2px;
+   left: 2px;
+   z-index: 3;
+}

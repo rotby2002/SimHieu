@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         html{
+             box-sizing: inherit;
+             text-align: center;
+         }
+        *{
+             padding: 0;
+             margin: 0;
+             box-sizing: border-box;
+             text-align: center;
+        }
+           .contain{
+                position: relative;
+                display: flex;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                justify-content: center;
+                align-items: center;
+                box-sizing: border-box;
+                /* justify-content: space-around; */
+
+           }
+           .live{
+            margin-top: 20px;
+               width: 1700px;
+               height: 1500px;
+               background-image: url("img/z5267640891954_a107c28480f045783840fea36d2fb3b3.jpg");
+               background-repeat: no-repeat;
+               background-size: cover;
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               justify-content: center;
+               
+           }
+           .live h2{
+              
+               color: red;
+               font-weight: bold;
+               font-size: 38px;
+               font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+               height: 36px;
+               margin-top: -200px;
+               text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+               margin-bottom: 20px;
+               
+           }
+           .live h3{
+                margin:10px 5px;
+                font-size: 16px;
+           }
+           .inputTwo{
+            margin-top: 10px;
+               display: flex;
+               text-align: center;
+               justify-content: space-around;
+           }
+           .inputTwo label {
+              font-size: 26px;
+              font-weight: bold;
+              color: red;
+              text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+              
+           }
+           #sdt,#born{
+               outline: none;
+               padding: 8px 24px;
+               border: none;
+               border-radius: 15px;
+               width: 350px;
+               font-size: 42px;
+               color: red;
+               font-weight: bold;
+               text-align: center;
+               margin: 10px 30px;
+           }
+           #born{
+               width: 250px;
+              height: 60px;
+           }
+           #sdt{
+               width: 560px;
+               height: 60px;
+           }
+           .button{
+               outline: none;
+               background-color: red;
+               color: white;
+               font-family: 'Times New Roman', Times, serif;
+               font-weight: 600;
+               font-size: 24px;
+               border: none;
+               border-radius: 5px;
+               padding: 5px 20px;
+               margin: 20px 20px;
+               cursor: pointer;
+               transition: 0.4s ease-in-out;
+  
+           }
+           .button:hover{
+                background-color: rgba(255, 0, 0, 0.6);
+           }
+           .showOne{
+                display: flex;
+                justify-content: space-around;
+                text-align: center;
+           }
+           .tuoi,.van,.dich,.ynss,.ynds,.snv,.tv,.trv,.hv{
+               width: 200px;
+               margin: 5px 20px;
+               background-color: antiquewhite;
+               border: 1px solid orange;
+               border-radius:12px;
+               text-align: center;
+               color: red;
+               font-weight: 900;
+               font-size: 24px;
+               text-align: center;
+
+           }
+           .tuoi,.van,.dich{
+             height: 100px;
+             text-align: center;
+             font-size: 34px;
+           }
+           .tuoi,.van{
+           }
+           .snv.tpp{
+               text-align: center;
+           }
+           .snv,.tv,.trv,.hv{
+               margin:10px 20px;
+           }
+           .ynds{
+               width:300px;
+               margin: 4px 20px;
+               height: 60px;
+               
+           }
+           .ynss{
+                width: 640px;
+                height: 60px;
+           }
+           .ynss,.ynds{
+                height: 100px;
+               /* padding: 15px; */
+               text-align: center;
+               font-size: 34px;
+           }
+           .ynds{
+               width:200px;
+               display: block;
+           }
+           .dich{
+               width: 460px;
+           }
+           .tuoi{
+               width: 120px;
+           }
+           .van{
+             width: 220px;
+           }
+           .showTwo{
+             display: flex;
+             justify-content: space-around;
+             margin: 10px 0px;
+           }
+           .showThree{
+              display: flex;
+              justify-content: space-around;
+
+           }
+           .showThree>div{
+                background-color: antiquewhite;
+                text-align: center;
+                padding: 12px 24px;
+                border: 1px solid orange;
+                margin: 0px 13px;
+                border-radius: 5px ;
+                width: 200px;
+                font-weight: bold;
+                color: red;
+           }
+           .showfor{
+               display: flex;
+               justify-content: space-around;
+               margin-top: 5px;
+               
+           }
+           
+           .avata ,.avata1 {
+               width: 500px;
+               
+           }
+           .avata {
+            position: absolute;
+             top: 0px;
+             left: 10px;
+             z-index: 2;
+           }
+           .avata1 {
+            z-index: 2;
+            position: absolute;
+             top: 0px;
+             right: 10px;
+           }
+           .avata img,.avata1 img {
+               width: 100%;
+               height: 100%;
+           }
+           #customer {
+      color: rgb(0, 0, 128);
+      text-align: center;
+      font-size: 18px;
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 80%;
+      height: 100%;
+      scrollbar-width: thin;
+    }
+    
+    #customer td, #customer th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    #customer tr:nth-child(even){background-color: #f2f2f2;}
+    
+    #customer tr:hover {background-color: #ddd;}
+    
+    #customer th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #04AA6D;
+      color: white;
+    }
+    #customer th{
+      text-align: center;
+    }
+    .title {
+      color: #5f27cd; /* Màu ban đầu */
+    }
+    #vanmenh{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 50px 0px;
+    }
+    #customerse-tienvan{
+      color: rgb(0, 0, 128);
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      height: 100%;
+      scrollbar-width: thin;
+    }
+    #customerse-tienvan td, #customerse-tienvan th , #customerse-bc td, #customerse-bc th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    #customerse-tienvan tr:nth-child(even){background-color: #f2f2f2;}
+    
+    #customerse-tienvan tr:hover {background-color: #ddd;}
+    
+    #customerse-tienvan th , #customerse-bc th{
+      padding: 12px 24px;
+      text-align: left;
+      background-color: #04AA6D;
+      color: white;
+    }
+    #customerse-tienvan th , #customerse-bc th{
+      text-align: center;
+    }
+
+    #customerse-trungvan{
+      color: rgb(0, 0, 128);
+      text-align: center;
+      font-size: 18px;
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      height: 100%;
+      scrollbar-width: thin;
+      margin: 50px 0px;
+    }
+    #customerse-trungvan td, #customerse-trungvan th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    #customerse-trungvan tr:nth-child(even){background-color: #f2f2f2;}
+    
+    #customerse-trungvan tr:hover {background-color: #ddd;}
+    
+    #customerse-trungvan th {
+      padding: 12px 24px;
+      text-align: left;
+      background-color: #04AA6D;
+      color: white;
+    }
+    #customerse-trungvan th{
+      text-align: center;
+    }
+
+    #customerse-hauvan{
+      color: rgb(0, 0, 128);
+      text-align: center;
+      font-size: 18px;
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      height: 100%;
+      scrollbar-width: thin;
+    }
+    #customerse-hauvan td, #customerse-hauvan th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    #customerse-trungvan td , #customerse-tienvan td ,#customerse-hauvan td
+    {
+        font-size: 13.5px;
+        color: black;
+    }
+    #customerse-hauvan tr:nth-child(even){background-color: #f2f2f2;}
+    
+    #customerse-hauvan tr:hover {background-color: #ddd;}
+    
+    #customerse-hauvan th {
+      padding: 12px 24px;
+      text-align: left;
+      background-color: #04AA6D;
+      color: white;
+    }
+    #customerse-hauvan th{
+      text-align: center;
+    }
+    #tienvan,#trungvan,#hauvan{
+        width: 80%;
+    }
+    .tv {
+      /* Điều chỉnh kích thước theo mong muốn */
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Đổ bóng */
+      margin: 10px 19px;
+    }
+    
+    .tv p {
+      margin: 0;
+
+    }
+    .trv {
+       
+      
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Đổ bóng */
+      margin: 10px 12px;
+    }
+    
+    .trv p {
+      margin: 0;
+
+    }
+    .hv {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Đổ bóng */
+      margin: 10px 10px;
+    }
+    
+    .hv p {
+      margin: 0;
+
+    }
+           /* .hed{
+            display:  flex;
+            justify-content: space-around;
+           } */
+           #customerse-bangc{
+            margin-top: 30px;
+  color: rgb(0, 0, 128);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  height: 100%;
+  scrollbar-width: thin;
+}
+#customerse-bangc td, #customerse-bangc th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customerse-bangc tr:nth-child(even){background-color: #f2f2f2;}
+
+#customerse-bangc tr:hover {background-color: #ddd;}
+
+#customerse-bangc th {
+  padding: 12px 24px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+#customerse-bangc th{
+  text-align: center;
+}
+#bangcuoi{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+}
+#customerse-dayso th{
+  padding: 12px 24px;
+  width: 250px;
+  background-color: #04AA6D;
+  color: white;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+#customerse-dayso tr,td{
+  color:  rgb(0, 0, 128);
+  text-align: center;
+}
+
+#customerse-bc{
+  color: rgb(0, 0, 128);
+  text-align: center;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  height: 100%;
+  scrollbar-width: thin;
+  margin: 50px 0px;
+}
+.nguhanh{
+  display: flex;
+  justify-content: center;
+}
+
+#nguhanhtb {
+  border-collapse: collapse;
+  width: 80%;
+}
+thead{
+  background-color: #04AA6D;
+  color: white;
+  padding: 8px 12px;
+}
+th, td {
+  padding: 13px 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  border: 1px solid #ddd;
+}
+
+tr:hover {background-color: coral;}
+.dulieu{
+  display: flex;
+  justify-content: center;
+  margin: 14px;
+}
+#namsinh{
+  outline: none;
+  padding : 20px 30px;
+  width: 300px;
+  border: none;
+  border-radius: 14px;
+  font-size: 30px;
+  font-weight: 800;
+  color: #989ea4;
+  background-color: none;
+  text-align: center;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+    </style>
+</head>
+<body>
+    <div class="contain">
+        
+           <div class="live">
+                <h2>XEM PHONG THỦY SIM SỐ THEO VẬN MỆNH</h2>
+                <h3>(TRƯỜNG PHÁI : VẬN NIÊN - 64 QUẺ DỊCH & 80 QUẺ LÝ SỐ)</h3>
+                
+                <div class="inputTwo">
+                       <div >
+                           <label for="sdt">NHẬP SỐ CẦN XEM </label>
+                           <br>
+                           <input type="text" name="" class="chuoi1" id="sdt">
+                       </div>
+                       <div>
+                           <label for="born">NĂM SINH ÂM LỊCH</label>
+                           <br>
+                           <input type="text" name="" id="born">
+                       </div>
+                </div>
+                <button class="button" onclick="showInputValue1()">XEM PHONG THỦY SIM</button>
+                <div class="showOne">
+                        <div class="tuoi"></div>
+                        <div class="van"></div>
+                        <div class="dich"></div>
+                </div>
+                <div class="showTwo" style="text-align: center;">
+                     <div class="ynds" style="text-align: center;"></div>
+                     <div class="ynss" style="text-align: center;"></div>
+                </div>
+                <div class="showThree">
+                      <div>SƠ NIÊN VẬN</div>
+                      <div>TIỀN VẬN</div>
+                      <div>TRUNG VẬN</div>
+                      <div>HẬU VẬN</div>
+                </div>
+                <div class="showfor">
+                      <div class="snv tpp"></div>
+                      <div class="tv"></div>
+                      <div class="trv"></div>
+                      <div class="hv"></div>
+                </div>
+                
+           </div>
+           
+    </div>
+    <div id="bangcuoi">
+      <!-- <table id="customerse-bc">
+          <thead>
+              <tr>
+                  <th>Vận</th>
+                  <th>Tên Quẻ</th>
+                  <th>Tên Quẻ Dịch</th>
+                  <th>STT Quẻ</th>
+                  <th>Trạng Thái Quẻ</th>
+                  <th>KeyWord Liên Quan</th>
+                  <th>Giải Nghĩa</th>
+              </tr>
+         </thead>
+         <tbody></tbody>
+       </table> -->
+      <table id="customerse-bangc">
+          <thead>
+              <tr>
+                  <th>Vận</th>
+                  <th>Tên Quẻ</th>
+                  <th>Tên Quẻ Dịch</th>
+                  <th>STT Quẻ</th>
+                  <th>Bất Biến Du Niên</th>
+                  <th>Trạng Thái Quẻ</th>
+                  <th>KeyWord Liên Quan</th>
+                  <th>Giải Nghĩa</th>
+              </tr>
+         </thead>
+         <tbody>
+
+         </tbody>
+       </table>
+       <div  id="trungvan">
+          
+          <table id="customerse-bctv">
+             <thead style="display: none;">
+                 <tr>
+                     <th>Vận</th>
+                     <th>Tên Quẻ Dịch</th>
+                     <th>STT Quẻ</th>
+                     <th>Trạng Thái Quẻ</th>
+                     <th>KeyWord Liên Quan</th>
+                     <th>Giải Nghĩa</th>
+                 </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+      </div>  
+      <div style="display: none;" id="trungvan">
+          
+          <table id="customerse-bctrv">
+             <thead>
+                 <tr>
+                     <th>Vận</th>
+                     <th>Tên Quẻ Dịch</th>
+                     <th>STT Quẻ</th>
+                     <th>Trạng Thái Quẻ</th>
+                     <th>KeyWord Liên Quan</th>
+                     <th>Giải Nghĩa</th>
+                 </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+      </div>  
+      <div style="display: none;" id="trungvan">
+          
+          <table id="customerse-bchv">
+             <thead>
+                 <tr>
+                     <th>Vận</th>
+                     <th>Tên Quẻ Dịch</th>
+                     <th>STT Quẻ</th>
+                     <th>Trạng Thái Quẻ</th>
+                     <th>KeyWord Liên Quan</th>
+                     <th>Giải Nghĩa</th>
+                 </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+      </div>  
+       
+  </div>
+    <script src="./live.js">
+    </script>
+</body>
+</html>

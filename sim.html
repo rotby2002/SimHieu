@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimSoDep</title>
+    <link rel="icon" href="https://cdn.thuvienphapluat.vn/phap-luat/2022-2/BN/2023/040523/sim-so-dep-1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./sim.css">
+</head>
+<body>
+    <div class="grid wide contain">
+        <div class="row">
+             <div class="col l-12  m-12  c-12">
+                   <div class="content">
+                           <h2 class="title">Tìm Sim Theo Mệnh</h2>
+                           <div class="input">
+                                   <table id="customers">
+                                        
+                                   </table>
+                           </div>
+                           <div class="menh">
+                               <button style="background-color: #95a5a6; color: white;">kim</button>
+                               <button style="background-color: #3498db; color: white;">thủy</button>
+                               <button style="background-color: #e74c3c; color: white;">hỏa</button>
+                               <button style="background-color:  #ffaf40; color: white;">thổ</button>
+                               <button style="background-color: #2ecc71; color: white;">mộc</button>
+                           </div>
+                            <div class="tim">
+                                  <button id="searchButton">Tìm Sim</button>
+                            </div>
+                            <div style="display: none;" id="output">
+                                    
+                            </div>
+                            <div style="display: none;" id="output-menh">
+
+                            </div>
+                            <div id="result">
+                                <table id="customer">
+                                    <thead>
+                                        <tr>
+                                            <th>6 Số cuối</th>
+                                            <th>Kết Quả</th>
+                                            <th>Ý nghĩa Quẻ</th>
+                                            <th>Ý nghĩa 6 số</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                          
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="vanmenh">
+                                <div id="tienvan">
+                                    
+                                     <table id="customerse-tienvan">
+                                        <thead>
+                                            <tr>
+                                                <th>Vận</th>
+                                                <th>Tên Quẻ Dịch</th>
+                                                <th>STT Quẻ</th>
+                                                <th>Trạng Thái Quẻ</th>
+                                                <th>KeyWord Liên Quan</th>
+                                                <th>Giải Nghĩa</th>
+                                            </tr>
+                                       </thead>
+                                       <tbody>
+
+                                       </tbody>
+                                     </table>
+                                </div>
+                                <div style="display: none;" id="trungvan">
+                                    
+                                    <table id="customerse-trungvan">
+                                       <thead>
+                                           <tr>
+                                               <th>Vận</th>
+                                               <th>Tên Quẻ Dịch</th>
+                                               <th>STT Quẻ</th>
+                                               <th>Trạng Thái Quẻ</th>
+                                               <th>KeyWord Liên Quan</th>
+                                               <th>Giải Nghĩa</th>
+                                           </tr>
+                                      </thead>
+                                      <tbody></tbody>
+                                    </table>
+                                </div>  
+                                <div style="display: none;" id="hauvan">
+                                    
+                                    <table id="customerse-hauvan">
+                                       <thead>
+                                           <tr>
+                                               <th>Vận</th>
+                                               <th>Tên Quẻ Dịch</th>
+                                               <th>STT Quẻ</th>
+                                               <th>Trạng Thái Quẻ</th>
+                                               <th>KeyWord Liên Quan</th>
+                                               <th>Giải Nghĩa</th>
+                                           </tr>
+                                      </thead>
+                                      <tbody></tbody>
+                                    </table>
+                                </div> 
+                            </div>
+                            <div class="pc">
+                                     <div class="text">
+                                            <input type="text" class="chuoi" placeholder="Phone">
+                                     </div>
+                                     <div class="seenMenh">
+                                           <button class="button1" onclick="showInputValue()">Xem</button>
+                                     </div>
+                                     <table id="customerse-dayso">
+                                        <thead>
+                                            <tr>
+                                                <th>Ý Nghĩa Dãy Số</th>
+                                                <th>Ý Nghĩa 6 số</th>
+                                            </tr>
+                                       </thead>
+                                       <tbody></tbody>
+                                     </table>
+                            </div>
+                            <div id="bangcuoi">
+                                <!-- <table id="customerse-bc">
+                                    <thead>
+                                        <tr>
+                                            <th>Vận</th>
+                                            <th>Tên Quẻ</th>
+                                            <th>Tên Quẻ Dịch</th>
+                                            <th>STT Quẻ</th>
+                                            <th>Trạng Thái Quẻ</th>
+                                            <th>KeyWord Liên Quan</th>
+                                            <th>Giải Nghĩa</th>
+                                        </tr>
+                                   </thead>
+                                   <tbody></tbody>
+                                 </table> -->
+                                <table id="customerse-bangc">
+                                    <thead>
+                                        <tr>
+                                            <th>Vận</th>
+                                            <th>Tên Quẻ</th>
+                                            <th>Tên Quẻ Dịch</th>
+                                            <th>STT Quẻ</th>
+                                            <th>Bất Biến Du Niên</th>
+                                            <th>Trạng Thái Quẻ</th>
+                                            <th>KeyWord Liên Quan</th>
+                                            <th>Giải Nghĩa</th>
+                                        </tr>
+                                   </thead>
+                                   <tbody>
+
+                                   </tbody>
+                                 </table>
+                                 <div  id="trungvan">
+                                    
+                                    <table id="customerse-bctv">
+                                       <thead style="display: none;">
+                                           <tr>
+                                               <th>Vận</th>
+                                               <th>Tên Quẻ Dịch</th>
+                                               <th>STT Quẻ</th>
+                                               <th>Trạng Thái Quẻ</th>
+                                               <th>KeyWord Liên Quan</th>
+                                               <th>Giải Nghĩa</th>
+                                           </tr>
+                                      </thead>
+                                      <tbody></tbody>
+                                    </table>
+                                </div>  
+                                <div style="display: none;" id="trungvan">
+                                    
+                                    <table id="customerse-bctrv">
+                                       <thead>
+                                           <tr>
+                                               <th>Vận</th>
+                                               <th>Tên Quẻ Dịch</th>
+                                               <th>STT Quẻ</th>
+                                               <th>Trạng Thái Quẻ</th>
+                                               <th>KeyWord Liên Quan</th>
+                                               <th>Giải Nghĩa</th>
+                                           </tr>
+                                      </thead>
+                                      <tbody></tbody>
+                                    </table>
+                                </div>  
+                                <div style="display: none;" id="trungvan">
+                                    
+                                    <table id="customerse-bchv">
+                                       <thead>
+                                           <tr>
+                                               <th>Vận</th>
+                                               <th>Tên Quẻ Dịch</th>
+                                               <th>STT Quẻ</th>
+                                               <th>Trạng Thái Quẻ</th>
+                                               <th>KeyWord Liên Quan</th>
+                                               <th>Giải Nghĩa</th>
+                                           </tr>
+                                      </thead>
+                                      <tbody></tbody>
+                                    </table>
+                                </div>  
+                                 
+                            </div>
+                            <div class="dulieu">
+                                   <input type="text" name="ns" id="namsinh" placeholder="Năm Sinh">
+                            </div>
+                            <div class="nguhanh">
+                                      <table id="nguhanhtb">
+                                        <thead>
+                                            <tr>
+                                                <th>Năm Sinh AL</th>
+                                                <th>Tuổi</th>
+                                                <th>Vận Hiện tại</th>
+                                                <th>Mệnh</th>
+                                                <th>Diễn Giải</th>
+                                                <th>Ý nghĩa dãy số</th>
+                                                <th>Ý nghĩa 6 số</th>
+                                                <th>Sơn Niên Vận</th>
+                                                <th>Tiền Vận</th>
+                                                <th>Trung Vận</th>
+                                                <th>Hậu Vận</th>
+                                                <th>Năm Xem</th>
+                                            </tr>
+                                       </thead>
+                                       <tbody></tbody>
+                                      </table>
+                            </div>
+                            <div class="lo">
+                                <button id="logoutButton" class="logout-button">Đăng xuất</button>
+                            </div>
+                   </div>
+             </div>
+        </div>
+        
+   </div>
+   <div class="liveTikTok">
+          <a href="live1.html">
+            <button class="button">Live</button>
+          </a>
+   </div>
+    <script src="./sim.js"></script>
+</body>
+</html>
